@@ -5,7 +5,7 @@
 /**
  * main - entry point
  *
- * Description: is n positive or negative
+ * Return: Always 0 (Success)
  *
  */
 
