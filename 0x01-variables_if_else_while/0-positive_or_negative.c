@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - entry point
+ *
+ * Description: is n positive or negative
+ *
+ */
+
 int main(void)
 {
 	int n;
