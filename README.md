@@ -1,2 +1,2 @@
 # alx-low_level_programming
-C project repository
+This repository is for my initial C Programming Language projects.
