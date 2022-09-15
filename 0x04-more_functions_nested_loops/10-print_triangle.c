@@ -1,5 +1,4 @@
-[A[A[B[B[B[A[D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[A[B#include "main.h"
+#include "main.h"
 
 /**
  * print_triangle -  a function that prints a triangle, followed by a new line.
