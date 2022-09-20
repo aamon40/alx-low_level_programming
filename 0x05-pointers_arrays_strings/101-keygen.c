@@ -1,34 +1,42 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * _atoi - a function that converts string to integer
- * @s: An input string
- * Return: integer from conversion
+ * main - random password generator for 101-crackme
+ *
+ * Return: always 0
  */
-int _atoi(char *s)
+int main(void)
 {
-	int sign = 1;
-	unsigned int total = 0;
-	char null_flag = 0;
+	int i, j, k, s;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[58];
 
-	while (*s)
+	srand(time(NULL));
+	while (s != 2772)
 	{
-		if (*s == '-')
-			sign *= -1;
-
-		if (*s >= '0' && *s <= '9')
+		i = k = s = 0;
+		while ((2772 - 122) > s)
 		{
-			null_flag = 1;
-			total = total * 10 + *s - '0';
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
 		}
-
-		elseif (null_flag)
-			break;
-		s++;
+		while (c[k])
+		{
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
+		}
 	}
-
-	if (sign < 0)
-		total = (-total);
-
-	return ( total);
+	p[i] = '\0';
+	printf("%s", p);
+	return (0);
 }
