@@ -8,19 +8,19 @@
  * Return: A pointer to the resulting string
  */
 char *_strncpy(char *dest, char *src, int n)
-{
-	int srclen = 0, i = 0;
+{	int srclen = 0, i = 0;
 	char *temp = dest, *start = src;
 
-	while(src)
+	while (*src)
 	{
 		srclen++;
 		src++;
 	}
 
-	srclen++;
+	srcle
+n++;
 
-	if(n > srclen)
+	if (n > srclen)
 		n = srclen;
 
 	src = start;
@@ -28,5 +28,5 @@ char *_strncpy(char *dest, char *src, int n)
 	for (; i < n; i++)
 		*dest++ = *src++;
 
-	retur * n (temp);
+	return (temp);
 }
