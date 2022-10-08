@@ -10,8 +10,8 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	charnew_location,*new_ptr;
-	unsi * gned int i = 0;
+	char *new_location, *new_ptr;
+	unsigned int i = 0;
 
 	if (new_size == old_size)
 		return (ptr);
