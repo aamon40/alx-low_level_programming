@@ -1,25 +1,19 @@
-#include "main.h"
+#include "dog.h"
+#include <stdlib.h>
 
 /**
- * array_range - create an array of integers inclusive of min and max
- * @min: min value to include
- * @max: max value to include
- * Return: pointer to newly created array
+ * init_dog - initialize a variable of type `struct dog`
+ * @d: struct dog
+ * @name: string for name
+ * @age: integer for age
+ * @owner: string for owners name
  */
-
-int *array_range(int min, int max)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	int *p, i;
-
-	if (min > max)
-		return (NULL);
-
-	p = malloc((max - min + 1) * sizeof(*p));
-	if (p == NULL)
-		return (NULL);
-
-	for (i = 0; min <= max; i++, min++)
-		p[i] = min;
-
-	return (p);
+	if (d != NULL)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
