@@ -8,9 +8,9 @@
  * Return: 1 or 2 on fail, 0 on success
  */
 int main(int argc, char *argv[])
-{	int bytes, i;
-	unsigned cha
-r *func_ptr;
+{
+	int bytes, i;
+	unsigned char *func_ptr;
 
 	if (argc != 2)
 	{
@@ -29,7 +29,8 @@ r *func_ptr;
 	{
 		while (i < (bytes - 1))
 			printf("%02hhx ", func_ptr[i++]);
-		printf("%hhx\n",func_ptr[i ]);
+		printf("%hhx\n",func_ptr[i]);
 	}
 	return (0);
 }
+ 
